@@ -1,0 +1,70 @@
+<!-- DESCENDIENTES, todos los h1 dentro de un div tomaran el color -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* DESCENDIENTES, todos los h1 dentro de un div tomaran el color */
+        div h1 {
+            color : hotpink
+        }
+        /* HIJO DIRECTO, todo el div dentro de un div tomará un background negro*/
+        div > div {
+            background: gray;
+        }
+            /*Hijo directo pero con clase */
+        div > .azulito {
+            background: blue;
+        }
+            /*DESCENDIENTE DEL HIJO DIRECTO */
+        div > div p {
+            color: white;
+        }
+        /*ELEMENTO ADYACENTE: */
+        div + span {
+            background: yellowgreen;
+        }
+        /*ELEMENTO GENERAL DE HERMANO: */
+        div ~ p {
+            background: purple;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div>
+        <h1>ESTE ES UN header1</h1>
+        <p>Este es un parrafo</p>
+
+        <div>
+            <h1>Header1 dentro de 2 divs</h1>
+            <p>Este es un parrafo dentro de 2 divs</p>
+
+            <div class="azulito">
+                <span>
+                    SPAN DENTRO DE UN DIV
+                    <h1>Header1 dentro de 3 divs</h1>
+                    <p>Este es un parrafo dentro de 3 divs</p>
+                </span>
+            </div>  
+            <span>
+                SPAN SEGUIDO DE UN DIV
+            </span>
+            <span>
+                SPAN SEGUIDO DE UN SPAN
+            </span>
+            <P>Parrafo a la jearquia de div</P>
+
+        </div>
+        <P>Parrafo a la jearquia de div</P>
+    </div>
+
+
+
+</body>
+
+</html>

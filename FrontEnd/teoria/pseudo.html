@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: salmon;
+        }
+        p:hover {
+            color: gray;
+        }
+        div p:nth-child(2){
+            color: brown;
+        }
+        p::first-letter{
+            color: black;
+        }
+        p::before{
+            content: "✨" ;
+        }
+        ::placeholder{
+            color: grey;
+        }
+        a:active {
+            color: red;
+        }
+        a:visited{
+            color:green
+        }
+        h1:not(.negro) {
+            color: blue;
+          }
+    </style>
+</head>
+
+<body>
+    <p>Parrafito</p>
+    <div>
+        <p>MICHELLE</p>
+        <p>LA MEJOR</p>
+        <p>DESARROLLADORA</p>
+    </div>
+    <input type = "text" placeholder="name">
+    <a href="#">Clickeame</a>
+    <h1>h1 Azul</h1>
+    <h1 class="negro">h1 Negro</h1>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            background: var(--white)
+        }
+        :root{
+            /*SIZING*/
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+
+            /*COLORES BASE*/
+            --very-light-pink: #C7C7C7;
+            --white: #FFFFFF;
+            --text-input-field: #dee8de;
+            --hospital-green: #ACD9B2;
+            --dark: #232830;
+        
+        }
+        section {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            
+        }
+        .card{
+            position: relative;
+            display: grid;
+            grid-template-rows: auto 1fr 1fr auto;
+            background: white;
+            width: 35%;
+            height: 80%;
+        }
+        .logo{
+            width: 160px;
+            height: 80px;
+            justify-self: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            display: none;
+        }
+        .form{
+            margin-top: 0;
+        }
+        .loginform{
+            display: flex;
+            margin-top: 0;
+            margin-bottom: 20px;
+            flex-direction: column;
+        }
+        .label{
+            font-weight: bold;
+            font-size: var(--md);
+            margin: 4px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        .input{
+            font-family: 'Quicksand', sans-serif;
+            font-size: var(--md);
+            border-radius: 8px;
+            border: none;
+            background-color: var(--text-input-field);
+            margin-top: 8px;
+            margin-bottom: 8px;
+            height: 40px;
+            padding-left: 10px;
+        }
+        .login {
+           
+            margin-top: 20px;
+            height: 50px;
+            background-color: var(--hospital-green);
+            border-radius: 10px;
+            border: none;
+            color: white;
+            font-size: var(--md);
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .forgot {
+            text-align: center;
+            cursor: pointer;
+        }
+        .forgot a{
+            color: var(--hospital-green);
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .forgot a:hover{
+            color: var(--dark);
+        }
+        .signup{
+            cursor: pointer;
+            width: 100%;
+            box-shadow: none;
+            border-radius: 10px;
+            border-color: var(--hospital-green);
+            border-style: solid;
+            background: var(--white);
+            color: var(--hospital-green);
+            font-size: var(--md);
+            font-weight: bold;
+            height: 50px;
+            margin-bottom: 20px;
+            
+        }
+
+        @media (max-width:640px) {
+            .logo{
+                display: block;
+            }
+            .signup{
+                position: absolute;
+                bottom: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="container"> 
+        <div class="card"> 
+            <img class="logo"  src="./logos/logo_yard_sale.svg" alt="logo">
+
+            <div class="form">
+                <form class="loginform" action="">
+                    <label class= "label" for="email">Email address</label>
+                    <input class= "input" type="email" id="email" placeholder="misusuyatec@gmail.com">
+                    <label class= "label" for="password">Password</label>
+                    <input class= "input" type="password" id="password" placeholder="********">
+
+                    <input class="login" class="submit" type="submit" value="Log in">
+                </form>
+                
+            </div>
+            <span class="forgot" ><a href="">Forgot my password</a></span>
+            <button class="signup">Sign up</button>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+
+<style>
+    body{
+        background: rgb(0, 0, 0);
+        margin: 0;
+        font-family: 'Quicksand', sans-serif;
+    }
+    :root{
+        /*SIZING*/
+        --sm: 12px;
+        --md: 16px;
+        --lg: 20px;
+
+        /*COLORES BASE*/
+        --very-light-pink: #dbd9d9;
+        --white: #FFFFFF;
+        --text-input-field: #dee8de;
+        --hospital-green: #ACD9B2;
+        --dark: #232830;
+    }
+    .main{
+        display: grid;
+      
+
+    }
+    .container{
+        width: 340px;
+        background: var(--white);
+        display: grid;
+        padding: 10px;
+       place-self: center;
+    }
+    .title{
+        margin-bottom: 35px;
+        width: 100%;
+        font-size: var(--lg);
+        font-weight: bold;
+    }
+   
+    
+    .lista{
+        list-style-type: none;
+        padding: 0px;
+    }
+    
+    .item{
+        display: grid;
+        grid-template-columns: 2fr 4fr 1fr;
+        align-items: center;
+    }
+    span p:nth-child(1){
+        font-size: var(--md);
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    span p:nth-child(2){
+        margin-top: 0px;
+        font-size: var(--sm);
+        font-weight: bold;
+        color: gray;
+    }
+    .item p{
+        font-size: var(--md);
+        font-weight: bold;
+        justify-self: end;
+    }
+    .flechita{
+        align-self: center;
+        justify-self: end;
+        width: 18%;
+    }
+
+    @media (max-width:400px){
+        .title{
+            display: none;
+        }
+    }
+</style>
+</head>
+
+<body>
+<div class="main">   
+    <div class="container">
+        <h1 class="title">My order</h1>
+        
+        <ul class="lista">
+            <li class="item"> 
+                <span>
+                    <p>04.25.2021</p>
+                    <p>5 articles</p>
+                </span>
+                <p>$560.00</p>
+                <img class="flechita" src="./icons/flechita.svg" alt="">
+            </li>
+            <li class="item"> 
+                <span>
+                    <p>04.25.2021</p>
+                    <p>5 articles</p>
+                </span>
+                <p>$560.00</p>
+                <img class="flechita" src="./icons/flechita.svg" alt="">
+            </li>
+            <li class="item"> 
+                <span>
+                    <p>04.25.2021</p>
+                    <p>5 articles</p>
+                </span>
+                <p>$560.00</p>
+                <img class="flechita" src="./icons/flechita.svg" alt="">
+            </li>
+            <li class="item"> 
+                <span>
+                    <p>04.25.2021</p>
+                    <p>5 articles</p>
+                </span>
+                <p>$560.00</p>
+                <img class="flechita" src="./icons/flechita.svg" alt="">
+            </li>
+            
+        </ul>
+    </div>
+</div> 
+</body>
+</html>

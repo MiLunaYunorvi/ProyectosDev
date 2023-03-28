@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            gap: 5px;
+            grid-template-columns: repeat(4,1fr);
+        }
+        .container2 {
+            display: grid;
+            grid-template-columns:  min-content 1fr 4fr ;
+        }
+        .container3 {
+            background: papayawhip;
+            display: grid;
+            grid-template-columns:  max-content 1fr min-content ;
+        }
+        .item{
+            border: solid 1px blueviolet;
+        }
+        .container4{
+            display: grid;
+            background: greenyellow;
+            grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+        }
+        .container5{
+            display: grid;
+            background:rgb(226, 196, 243);
+            grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Hola Michelle Luna Alama :D </div>
+        <div class="item">2</div>
+        <div class="item">3 tristes tigres tragaban trigo en un trigal</div>
+        <div class="item">4</div>
+        <div class="item">55555555555555555555555555555555555555555555 5    555   555555      55555 5555 555555555</div>
+        <div class="item">tragaban trigo en un trigal, en un trigal tragaban trigo</div>
+
+    </div>
+    <p>DIVISION</p>
+    <div class="container2">
+        <div class="item">Hola Michelle Luna Alama :D </div>
+        <div class="item">2</div>
+        <div class="item">3 tristes tigres tragaban trigo en un trigal</div>
+        <div class="item">4</div>
+        <div class="item">555555555555555555555</div>
+        <div class="item">tragaban trigo en un trigal, en un trigal tragaban trigo</div>
+    </div>
+
+    <p>DIVISION</p>
+    <div class="container3">
+        <div class="item">Hola Michelle Luna Alama :D </div>
+        <div class="item">2</div>
+        <div class="item">3 tristes tigres tragaban trigo en un trigal</div>
+        <div class="item">4</div>
+        <div class="item">555555555555555555555</div>
+        <div class="item">tragaban trigo en un trigal, en un trigal tragaban trigo</div>
+    
+    </div>
+    <p>auto-fit</p>
+    <div class="container4">
+        <div class="item">Hola Michelle Luna Alama :D </div>
+        <div class="item">2</div>
+        <div class="item">3 tristes tigres tragaban trigo en un trigal</div>
+        <div class="item">4</div>
+        <div class="item">columnra rara con numeros no se xq no funcionan</div>
+        <div class="item">tragaban trigo en un trigal, en un trigal tragaban trigo</div>
+    
+    </div>
+    <p>auto-fill</p>
+    <div class="container5">
+        <div class="item">Hola Michelle Luna Alama :D </div>
+        <div class="item">2</div>
+        <div class="item">3 tristes tigres tragaban trigo en un trigal</div>
+        <div class="item">4</div>
+        <div class="item">columnra rara con numeros no se xq no funcionan</div>
+        <div class="item">tragaban trigo en un trigal, en un trigal tragaban trigo</div>
+    
+    </div>
+</body>
+</html>

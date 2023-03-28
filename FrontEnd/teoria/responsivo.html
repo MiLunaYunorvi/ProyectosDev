@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        div{
+            
+            background: papayawhip;
+        }
+        div + p {
+            font-size: 2rem;
+            background: palegreen;
+        }
+        .container {
+            width: 150px;
+            height: 100vh;
+        }
+        /*Responsive*/
+        /*Cuando se alcance y supere una medida de 300px en altura, 
+        entonces todos los divs cambian a negro*/
+        @media (min-height: 300px){
+            div {
+                background: black;
+            }
+
+        }
+        @media (max-height: 300px){
+            p {
+                background: black;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        DIV
+    </div>    
+    <p>Michelle Luna con 2 rem</p>
+    <p>Michelle Luna</p>
+    <div class="container">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*para el contenedor más grande*/
+        section {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+        .card {
+            width: 400px;
+            height: 600px;
+            background: #E1FFA0;
+            border-radius: 20px;
+            position: relative;
+            /*Para cortar los sobrantes*/
+            overflow: hidden;
+            border: solid;
+            border-color: #98B35F;
+        }
+        /*Para que la imagen se adecue, especificamos con un selector descendiente*/
+        .imgportada {
+            position: absolute;
+            width: 100%;
+        }
+        .imgportada img{
+            position: absolute;
+            width: 100%;
+        }
+        .card .imgperfil {
+            position: absolute;
+            z-index: 3;
+            top: 200px;
+            left: 150px;
+        }
+        .imgperfil img{
+            border-radius: 60%;
+            width: 100%;
+            width: 100px;
+            height: 100px;
+            border: dotted;
+            border-color: #414D29;
+        }
+        .presentacion {
+            overflow: hidden;
+            background: #E6A1FF;
+            z-index: 2;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            width: 60%;
+            top: 280px;
+            left: 52px;
+            border-image: url("https://i.pinimg.com/originals/08/c5/87/08c58703e9c34fdaff7a1eec16aa6f06.png")
+            100 / 10px / 0 round;
+            border-width: 28px;
+            border-style: solid;
+            border-radius: 10%;
+
+        }
+        .presentacion h1,p,ul{
+            color: #414D29 ;
+            font-family: monaco,Consolas,monospace;
+        }
+        .presentacion p,ul{
+            color: #606654;
+            list-style-type: none;
+            padding: 0; /* Remove margins */
+        }
+        .ContenedorBoton{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            top: 90%;
+            width: 60%;
+            width: 400px;
+            height: 50px;
+            z-index: 4;
+            justify-content: space-around;
+        }
+        .btn {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: #606654;
+            background-size: 100%;
+        }
+        .btnTw {
+            opacity: 0.8;
+            background-image: url("https://cdn-icons-png.flaticon.com/512/60/60580.png");
+        }
+        .btnFa {
+            opacity: 0.8;
+            background-image: url("https://cdn-icons-png.flaticon.com/512/49/49354.png");
+        }
+        .btnYo {
+            opacity: 0.8;
+            background-image: url("https://www.pngkit.com/png/full/200-2003350_icono-youtube-negro-png.png");
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <div class="imgperfil">
+                <img src="https://cdn.shopify.com/s/files/1/0598/4085/6273/collections/Pooh.png?v=1662823655" alt="poohterror">
+            </div>
+            <div class="imgportada">
+                <img src="https://rare-gallery.com/uploads/posts/527345-winnie-the-pooh.jpg" alt="pooh">
+            </div>
+            <div class="presentacion">
+                <h1>WinniePooh</h1>
+                <p>Devorador de miel profesional</p>
+                <ul>
+                    <li>Explorador nato</li>
+                    <li>Amistoso y simpatico</li>
+                    <li>Rechonchito y bailarin</li>
+                </ul>
+            </div>
+
+            <div class = "ContenedorBoton">
+                <a href="https://twitter.com/PoohBearWisdom">
+                    <button class="btn btnTw" type="button"></button>
+                </a>
+                <a href="https://www.facebook.com/WinniethePooh/">
+                    <button class="btn btnFa" type="button"></button>
+                </a>
+                <a href="https://www.youtube.com/watch?v=eGwbjvEOtQE">
+                    <button class="btn btnYo" type="button"></button>
+                </a>
+
+            </div>
+            
+
+            
+            
+        </div>
+    </section>
+</body>
+</html>

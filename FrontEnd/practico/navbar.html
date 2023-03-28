@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+
+<style>
+    body{
+        background: rgb(0, 0, 0);
+        margin: 0;
+        font-family: 'Quicksand', sans-serif;
+        height: 100vh;
+    }
+    :root{
+        /*SIZING*/
+        --sm: 12px;
+        --md: 16px;
+        --lg: 20px;
+
+        /*COLORES BASE*/
+        --very-light-pink: #c5c0c0;
+        --white: #FFFFFF;
+        --text-input-field: #dee8de;
+        --hospital-green: #ACD9B2;
+        --dark: #232830;
+    }
+    .container{
+        height: 60px;
+        display: grid;
+        width: 100%;
+    }
+   
+    .container .navbar{
+        
+        width: 100%;
+        padding: 10px;
+        display: grid;
+        background: white;
+        grid-template-columns:  1fr 2fr 1fr;
+        align-items: center;
+        
+    }
+    .navbar img:nth-child(1){
+        height: 25px;
+        width: 25px;
+       justify-self: start;
+      
+    }
+    .navbar img:nth-child(2){
+        width: 180px;
+        object-fit: cover;
+        justify-self: center;
+       
+    }
+    .navbar img:nth-child(3){
+        height: 30px;
+        width: 30px;
+        justify-self: end;
+        padding-right: 10px;
+    }
+    .opciones{
+        display: none;
+    }
+    .navbar > p{
+        display: none;
+    }
+    
+    @media (min-width:450px){
+        .container .navbar{
+        
+            width: 100%;
+            padding: 10px;
+            display: grid;
+            background: rgb(255, 255, 255);
+            grid-template-columns:  1fr 3fr 1fr 0.5fr;
+            align-items: center;
+            
+        }
+        .menucito{
+            display: none;
+        }
+        .navbar img:nth-child(3){
+            grid-column: 4/5 ;
+            justify-self: center;
+        }
+        .navbar > p{
+            display: block;
+            grid-row: 1/2;
+            grid-column: 3/4;
+            justify-self: end;
+        }
+        .navbar img:nth-child(2){
+            width: 140px;
+            object-fit: cover;
+            justify-self: center;
+            padding-right: 10px ;
+           
+        }
+        .opciones{
+            padding-left: 20px;
+            display: flex;
+            grid-column: 2/3;
+            grid-row: 1/2;
+            gap: 15px;
+        }
+        .opciones a{
+            text-decoration: none;
+            color: var(--very-light-pink);    
+        }
+        .opciones a:nth-child(1){
+            text-decoration: none;
+            color: var(--hospital-green);   
+            border: var(--hospital-green) solid 1px;
+            border-radius: 5px; 
+            padding: 3px;
+            text-align: center;
+        }
+        .item{
+            flex-basis: 8%;
+            padding: 3px;
+        }
+        
+    }
+</style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="navbar">
+            <img class= "menucito" src="./icons/icon_menu.svg" alt="menucito">
+            <img src="./logos/logo_bota_fora.svg" alt="menucito">
+            <img src="./icons/icon_shopping_cart_notification.svg" alt="notfi">
+
+            <div class="opciones">
+                <a class="item" href="">All</a>
+                <a class="item" href="">Clothes</a>
+                <a class="item" href="">Electronics</a>
+                <a class="item" href="">Furniture</a>
+                <a class="item" href="">Toys</a>
+                <a class="item" href="">Others</a>
+            </div>
+            <p>misususyatec@gmail.com</p>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3,100px);
+            grid-template-rows: repeat(3,100px);
+        }
+        .container > .item:nth-child(1){
+            background: greenyellow;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .container > .item:nth-child(2){
+            background: lightcyan;
+            grid-row: 2/4
+        }
+        .container > .item:nth-child(3){
+            background: lightpink;
+            grid-area: 2/2/4/4;
+        }
+        .container2 {
+            /*Para definir tamaños de columnas y filas que se creen*/
+            grid-auto-rows: 50px;
+            grid-auto-columns: 100px;
+            display: grid;
+            /*Para crear las áreas*/
+            grid-template-areas: 
+                "header header header"
+                "side main main"
+                "side main main";
+        }
+        .container2 .item:nth-child(1){
+            grid-area: header;
+            background: greenyellow;
+        }
+        .container2 .item:nth-child(2){
+            grid-area: main;
+            background: lightsalmon;
+        }
+        .container3{
+            display: grid;
+            grid-auto-columns: 200px;
+            grid-auto-rows: 200px;   
+            
+        }
+        .item {
+            display: grid;
+            place-items: center;
+        }
+        .container3 > .item:nth-child(1){
+            background: rgba(44, 56, 150, 0.773);
+            border-radius: 10px;
+            margin: 2px;
+           
+        }
+        .container3 > .item:nth-child(2){
+            background: rgba(23, 47, 223, 0.773);
+            border-radius: 10px;
+            margin: 2px;
+            grid-area: 1/2/2/4;
+        }
+        .container3 > .item:nth-child(3){
+            background: rgba(62, 178, 210, 0.773);
+            border-radius: 10px;
+            margin: 2px;
+            grid-area: 2/1/3/3;
+        }
+        .container3 > .item:nth-child(4){
+            background: rgba(44, 56, 150, 0.773);
+            border-radius: 10px;
+            margin: 2px;
+            grid-area: 2/3/3/4;
+        }
+        .container3 > .item:nth-child(5){
+            background: rgba(44, 56, 150, 0.773);
+            border-radius: 10px;
+            margin: 2px;
+            grid-area: 3/1/4/2;
+        }
+        .container3 > .item:nth-child(6){
+            background: rgba(23, 47, 223, 0.773);
+            border-radius: 10px;
+            margin: 2px;
+            grid-area: 3/2/4/3;
+        }
+        .container3 > .item:nth-child(7){
+            background: rgba(62, 178, 210, 0.773);
+            border-radius: 10px;
+            margin: 2px;  
+        }
+        .img {
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="item">1  </div>
+        <div class="item">2</div>
+        <div class="item">3 </div>
+        
+    </div>
+    <p>SEPARACION</p>
+    <div class="container2">
+        <div class="item">1  </div>
+        <div class="item">2</div>
+        <div class="item">3 </div>
+    </div>
+    <p>SEPARACION</p>
+    <div class="container3">
+        <div class="item"><img class="img" src="./imagenes/buzz.png" alt=""></div>
+        <div class="item"><img class="img" src="./imagenes/rex.png" alt=""></div>
+        <div class="item"><img class="img" src="./imagenes/woody.jpg" alt=""></div>
+        <div class="item"><img class="img" src="./imagenes/jessie.jpg" alt=""></div>
+        <div class="item"><img class="img" src="./imagenes/lotso.jpg" alt=""></div>
+        <div class="item"><img class="img" src="./imagenes/alien.jpg" alt=""></div>
+        <div class="item"><img class="img" src="./imagenes/-Slinky.jpg" alt=""></div>
+    </div>
+</body>
+</html>

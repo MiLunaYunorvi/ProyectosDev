@@ -1,0 +1,93 @@
+<!–Le dice al navegador que es contenido HTML5->
+<!DOCTYPE html>
+
+<!–Contenedor padre HTML, que lleva el atributo de lenguaje->
+<html lang="es">
+
+    <head>
+        <!–Etiquetas meta, con atributo UTF-8 para que el navegador entienda caracteres especiales ->
+        <meta charset="UTF-8">
+        <!-Ayuda al SEO, para mejor alcance de la pagina, es UNA DESCRIPCION INICIAL QUE TOMA EL NAVEGADOR ->
+        <meta name="descripcion" content="Página con fotos de michis">
+        <!-Ayuda a los robots a posicionar la pagina->
+        <meta name="robots" content="index,follow">
+        <title> MiIndex</title>
+        <!- Para diseños responsivos ->
+        <meta name="viewport" content="width=device-width, inictial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        
+
+        <header id="header" class="page-header">
+            <h1 id="page-title" class="title">Titulo</h1>
+            <nav>
+                <ul id="nav" class="main-nav">
+                    <li class="main-nav__item"><a href="">Home</a></li>
+                    <li class="main-nav__item"><a href="">Formularios</a></li>
+                    <li class="main-nav__item"><a href="">Imagenes</a></li>
+                    <li class="main-nav__item"><a href="">Videos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <MAin>
+            <section>
+                <article></article>
+            </section>
+            
+            <!- OL para listas ordenadas numeradas, UL para listas con bullets->
+            <ul>
+                <li>Item de lista desordenada</li>
+            </ul>
+            <ol>
+                <li>Item de lista ordenada</li>
+            </ol>
+            <section class="sectionimg">
+
+            </section>
+            <P class="pclass">Parrafito con clase</P>
+            <h1 pantalla="atributo pantalla" id="h1id">Titulo h1 con id</h1>
+            <h1 class="h1class">Titulo h1 con class</h1>
+            <input  type="text" name="" id="idinput" placeholder="Michelle">
+
+            <section>
+                <figure class="imagenes" >
+                    <img src="./imagenes/peque (1).jpg" alt="imagenPequeña">
+                    <img src="./imagenes/mediano (1).jpg" alt="imagenMediana">
+                    <figcaption>Es una imagen de paisajes</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <form action="">
+                    <label for="idinput">
+                        <span>Nombres?</span>
+                        <!- Placeholder para dar ejemplos->
+                        <input type="text" name="" id="idinput" placeholder="Michelle">
+                    </label>
+                    <label for="fecha">
+                        <span>Nacimiento?</span>
+                        <input type="date" name="" id="fecha">
+                    </label>
+                    <label for="horario">
+                        <span>Horario?</span>
+                        <input type="time" name="" id="horario">
+                    </label>
+                </form>
+            </section>
+
+           
+            <h1>Titulo h1</h1>
+
+        </MAin>
+
+        <FOOter>
+
+        </FOOter>
+
+        <script src="./js/script.js"></script>
+    </body>
+
+</html>

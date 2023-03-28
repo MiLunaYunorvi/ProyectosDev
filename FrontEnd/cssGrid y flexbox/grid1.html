@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background: papayawhip;
+            border: solid 5px coral;
+            display: grid;
+            grid-template-columns: 400px 600px;
+            grid-template-rows: 300px auto 100px;
+        }
+        .item{
+            font-size: 50px ;
+        }
+        .container2{
+            background: greenyellow;
+            border: solid 5px green;
+            display: grid;
+            grid-auto-rows: 150px;
+            grid-auto-columns: 300px;
+            grid-auto-flow: column;
+        }
+        .container2{
+            background: greenyellow;
+            border: solid 5px green;
+            display: grid;
+            grid-auto-rows: 150px;
+            grid-auto-columns: 300px;
+            grid-auto-flow: column;
+        }
+        .container3{
+            background: lightblue;
+            border: solid 5px green;
+            display: grid;
+            grid-auto-columns: 300px;
+            grid-template-rows: 150px 150px;
+            grid-auto-flow: column;
+        }
+        .container4{
+            background: lightblue;
+            border: solid 5px green;
+            display: grid;
+            grid-auto-columns: 300px;
+            grid-template-rows: 150px 150px;
+            grid-auto-flow: column;
+            row-gap: 20px;
+            column-gap: 50px;
+        }
+        .container5{
+            display: grid;
+            border: 1px black;
+            gap: 20px;
+            width: 300px;
+            height: 300px;
+            grid-template-rows: 120px 120px 120px;
+            grid-auto-flow: column;
+            
+        }
+        .container5 > .item{
+            height: 100px;
+            width: 100px;
+        }
+        .container5 > .item:nth-child(1){
+            background-color: greenyellow;
+        }
+        .container5 > .item:nth-child(2){
+            background-color: #95de27;
+        }
+        .container5 > .item:nth-child(3){
+            background-color: #63d42f;
+        }
+        .container5 > .item:nth-child(4){
+            background-color: #52cc26;
+        }
+        .container5 > .item:nth-child(5){
+            background-color: #357f12;
+        }
+        .container5 > .item:nth-child(6){
+            background-color: #2e6e10;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">MICHELLE  </div>
+        <div class="item">VILMA </div>
+        <div class="item">FLORI </div>
+        <div class="item">AFRICA    </div>
+        <div class="item">LUBE  </div>
+    </div>
+
+    <div class="container2">
+        <div class="item">MICHELLE  </div>
+        <div class="item">VILMA </div>
+        <div class="item">FLORI </div>
+        <div class="item">AFRICA    </div>
+        <div class="item">LUBE  </div>
+    </div>
+    <div class="container3">
+        <div class="item">MICHELLE  </div>
+        <div class="item">VILMA </div>
+        <div class="item">FLORI </div>
+        <div class="item">AFRICA    </div>
+        <div class="item">LUBE  </div>
+    </div>
+    <div class="container4">
+        <div class="item">MICHELLE  </div>
+        <div class="item">VILMA </div>
+        <div class="item">FLORI </div>
+        <div class="item">AFRICA    </div>
+        <div class="item">LUBE  </div>
+    </div>
+
+    <div class="container5">
+        <div class="item">1  </div>
+        <div class="item">2</div>
+        <div class="item">3 </div>
+        <div class="item">4    </div>
+        <div class="item">5 </div>
+        <div class="item">6 </div>
+    </div>
+</body>
+</html>
